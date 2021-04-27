@@ -111,13 +111,14 @@ dice = turtle.Turtle()
 win = turtle.Turtle()
 win.hideturtle()
 
-bull_score = 0
-cow_score = 0
+
 
 
 # ***setup dice and players movement***#
 
 def gamesetup():
+    bull_score = 0
+    cow_score = 0
     dice.penup()
     dice.hideturtle()
     dice.setpos(-350, -20)
@@ -178,7 +179,7 @@ def gamesetup():
                 turtle.addshape("win.gif")
                 win.shape("win.gif")
                 win.showturtle()
-                # bull_score = bull_score + 1
+                bull_score = bull_score + 1
                 input("Press enter to start new game")
                 print("Bull Score = {}".format(bull_score))
                 print("Cow Score = {}".format(cow_score))
@@ -259,7 +260,7 @@ def gamesetup():
                 turtle.addshape("win.gif")
                 win.shape("win.gif")
                 win.showturtle()
-                # cow_score = cow_score + 1
+                cow_score = cow_score + 1
                 input("press Enter to start new game")
                 print("Bull Score = {}".format(bull_score))
                 print("Cow Score = {}".format(cow_score))
