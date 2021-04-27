@@ -180,6 +180,8 @@ def gamesetup():
                 win.showturtle()
 
                 input("Press enter to start new game")
+                print("Bull Score = {}".format(bull_score))
+                print("Cow Score = {}".format(cow_score))
                 bull.reset()
                 cow.reset()
                 bull.penup()
@@ -189,8 +191,6 @@ def gamesetup():
                 cow.goto(-210, -225)
                 square = 1
                 square_2 = 1
-                print("Bull Score = {}".format(bull_score))
-                print("Cow Score = {}".format(cow_score))
 
         if square == 5:
             bull.forward(220)
