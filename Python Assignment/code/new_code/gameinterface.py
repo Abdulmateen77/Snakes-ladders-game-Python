@@ -102,7 +102,7 @@ win.hideturtle()
 
 #***setup dice and players movement***#
 
-def roll():
+def gamesetup():
     dice.penup()
     dice.hideturtle()
     dice.setpos(-350,-20)
@@ -295,4 +295,4 @@ def roll():
 
         print("Fluffy cow is at Square ", square_2)
         
-roll()
+gamesetup()
