@@ -261,6 +261,8 @@ def gamesetup():
                 win.showturtle()
 
                 input("press Enter to start new game")
+                print("Bull Score = {}".format(bull_score))
+                print("Cow Score = {}".format(cow_score))
                 print("New game!")
                 cow.reset()
                 bull.reset()
