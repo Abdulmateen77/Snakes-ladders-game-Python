@@ -89,7 +89,7 @@ print('Welcome: {}'.format(player1_name))
 player2_name = input("Type your name to choose cow ")
 if player2_name == '':
     player2_name = 'Fluffy Cow'
-print('Welcome: {}'.format(player1_name))
+print('Welcome: {}'.format(player2_name))
 
 ply = turtle.Turtle()
 ply.penup()
