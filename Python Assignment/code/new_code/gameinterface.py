@@ -111,6 +111,9 @@ dice = turtle.Turtle()
 win = turtle.Turtle()
 win.hideturtle()
 
+bull_score = 0
+cow_score = 0
+
 
 # ***setup dice and players movement***#
 
@@ -186,6 +189,8 @@ def gamesetup():
                 cow.goto(-210, -225)
                 square = 1
                 square_2 = 1
+                print("Bull Score = {}".format(bull_score))
+                print("Cow Score = {}".format(cow_score))
 
         if square == 5:
             bull.forward(220)
