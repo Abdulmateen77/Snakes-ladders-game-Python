@@ -261,9 +261,9 @@ def gamesetup():
                 win.shape("win.gif")
                 win.showturtle()
                 cow_score = cow_score + 1
-                input("press Enter to start new game")
-                print("Bull Score = {}".format(bull_score))
-                print("Cow Score = {}".format(cow_score))
+                input("Press Enter to start new game")
+                print("{}'s Score = {}".format(player1_name, bull_score))
+                print("{}'s Score = {}".format(player2_name, cow_score))
                 print("New game!")
                 cow.reset()
                 bull.reset()
