@@ -78,7 +78,13 @@ if dark_mode == "yes":
     turtle.bgcolor("dimgray")  
 
 player1_name = input("Type your name to choose bull ")
+if player1_name == '':
+    player1_name = 'Big Bad Bull'
+print('Welcome: {}'.format(player1_name))
 player2_name = input("Type your name to choose cow ")
+if player2_name == '':
+    player2_name = 'Fluffy Cow'
+print('Welcome: {}'.format(player1_name))
 
 ply = turtle.Turtle()
 ply.penup()
@@ -165,7 +171,7 @@ def gamesetup():
                 win.shape("win.gif")
                 win.showturtle()
                 
-                input("press enter to start new game")
+                input("Press enter to start new game")
                 bull.reset()
                 cow.reset()
                 bull.penup()
@@ -208,7 +214,7 @@ def gamesetup():
             bull.goto(210, 170) 
             break
 
-        print("Big Bad bull is at square ", square)
+        print("Big Bad Bull is at square ", square)
         
 
         print(player2_name, "Press enter to roll the dice")

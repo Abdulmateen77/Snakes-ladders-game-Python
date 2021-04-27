@@ -1,6 +1,9 @@
 
 import turtle
 import random
+from squares import squares
+from numbers import numbers
+from gameinterface import ladders, snake, players, stretch, gamesetup
 
 
 #*************Setup Parameters***********#
@@ -23,11 +26,7 @@ def main():
         turtle.right(90)
 main()
 
-from squares import squares
 
-from numbers import numbers
-
-from gameinterface import ladders, snake, players, stretch, gamesetup
 
 
 
