@@ -151,15 +151,12 @@ def roll():
                 bull.right(90)
 
             if square == 22 and dice_roll >= 4:
-                break
                 bull.backward(110)
                 sqaure = 21
             if square == 23 and dice_roll >= 3:
-                break
                 bull.backward(210)
                 square = 21
             if square == 24 and dice_roll >= 2:
-                break
                 bull.backward(310)
                 square = 21
 
