@@ -96,13 +96,13 @@ ply.penup()
 ply.hideturtle()
 style = ("arial", 17, "italic", "bold")
 ply.goto(-70, 280)
-ply.write(player1_name, "assign = center", font=style)
+ply.write(player1_name, "assign = left", font=style)
 
 ply.goto(20, 280)
 ply.write("vs", "assign = center", font=style)
 
 ply.goto(65, 280)
-ply.write(player2_name, "assign = center", font=style)
+ply.write(player2_name, "assign = right", font=style)
 
 square = 1  # **Keeps track of the square**#
 square_2 = 1
@@ -165,15 +165,15 @@ def gamesetup():
             if curr_pos[0] + 107 < -100:
                 bull.right(90)
 
-            if square == 22 and dice_roll >= 4:
-                bull.backward(110)
-                sqaure = 21
-            if square == 23 and dice_roll >= 3:
-                bull.backward(210)
-                square = 21
-            if square == 24 and dice_roll >= 2:
-                bull.backward(310)
-                square = 21
+            # if square == 22 and dice_roll >= 4:
+            #     bull.backward(110)
+            #     sqaure = 21
+            # if square == 23 and dice_roll >= 3:
+            #     bull.backward(210)
+            #     square = 21
+            # if square == 24 and dice_roll >= 2:
+            #     bull.backward(310)
+            #     square = 21
 
             if square >= 25:
                 turtle.addshape("win.gif")
@@ -181,8 +181,8 @@ def gamesetup():
                 win.showturtle()
                 bull_score = bull_score + 1
                 input("Press enter to start new game")
-                print("Bull Score = {}".format(bull_score))
-                print("Cow Score = {}".format(cow_score))
+                print("{}'s Score = {}".format(player1_name, bull_score))
+                print("{}'s Score = {}".format(player2_name, cow_score))
                 bull.reset()
                 cow.reset()
                 bull.penup()
