@@ -13,7 +13,7 @@ def main():
     turtle.pendown()
     turtle.bgcolor("floralwhite")
     # turtle.hideturtle()
-    # turtle.color("navy")
+    # turtle.color("blue")
 
     # *************Draws layout of Board***********#
     for i in range(4):
