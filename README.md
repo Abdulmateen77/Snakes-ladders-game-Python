@@ -1,4 +1,5 @@
-#Snakes and Ladders GUI Game Documentation
+Snakes and Ladders GUI Game
+Welcome to the Snakes and Ladders GUI Game repository! 🐍🪜
 
 ## Table of Contents
 1. Introduction
