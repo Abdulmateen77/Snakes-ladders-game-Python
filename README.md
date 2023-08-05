@@ -19,11 +19,7 @@ To play the Snakes and Ladders GUI Game, follow these steps:
 1. Make sure you have Python installed on your system (Python 3.6 or higher).
 2. Clone or download the game repository from https://github.com/Abdulmateen77/Snakes-ladders-game-Python/.
 3. Navigate to the game directory using the terminal or command prompt.
-4. Install required dependencies using the following command:
-   ```
-   pip install -r requirements.txt
-   ```
-5. Run the game script:
+4. Run the game script:
    ```
    python snakes_and_ladders_gui.py
    ```
